@@ -108,4 +108,29 @@ for i = 1:length(t)-1
     
     drawnow;
     pause(0.005);
+
+
 end
+% Create figure
+figure1 = figure;
+
+% Create axes
+axes1 = axes('Parent',figure1,...
+    'Position',[0.13 0.188991719434973 0.777433380084152 0.73600828056503]);
+hold(axes1,'on');
+
+% Create semilogx
+semilogx(Y1,'DisplayName','');
+
+% Create ylabel
+ylabel({'Altura d''água (m)'});
+
+% Create xlabel
+xlabel({'Tempo (s)'});
+
+box(axes1,'on');
+hold(axes1,'off');
+% Set the remaining axes properties
+set(axes1,'XMinorTick','on','XScale','log');
+% Create legend
+legend(axes1,'show');
