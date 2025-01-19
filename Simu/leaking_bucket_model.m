@@ -11,7 +11,7 @@ A_bottom = pi * r^2; % Bottom area (m^2)
 h202 = h0;     % Initial water h0 (m)
 
 dt = 1;              % Time step (s)
-t_final = 3600;       % Final simulation time (s)
+t_final = 600;       % Final simulation time (s)
 
 L_lateral = h0;      % Length of the lateral leak area (m)
 
